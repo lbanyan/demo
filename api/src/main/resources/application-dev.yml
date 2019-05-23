@@ -39,4 +39,4 @@ hibernate:
   showSql: true
   formatSql: true
   hbm2ddl:
-    auto: none
+    auto: update
