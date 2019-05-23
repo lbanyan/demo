@@ -1,0 +1,42 @@
+# redis
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password: 111111
+  pool:
+    max-wait: 200
+    max-active: 100
+    max-idle: 80
+
+# 数据库
+datasource:
+  username: root
+  password: 111111
+  url: jdbc:mysql://172.25.152.173:3306/demo?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&nullNamePatternMatchesAll=true&allowMultiQueries=true&serverTimezone=Hongkong
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  type: com.alibaba.druid.pool.DruidDataSource
+  validationQuery: SELECT 1 FROM DUAL
+  # 下面为连接池的补充设置，应用到上面所有数据源中
+  # 初始化大小，最小，最大
+  initialSize: 20
+  minIdle: 5
+  maxActive: 35
+  # 配置获取连接等待超时的时间
+  maxWait: 60000
+  # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+  timeBetweenEvictionRunsMillis: 60000
+  # 配置一个连接在池中最小生存的时间，单位是毫秒
+  minEvictableIdleTimeMillis: 30000
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: true
+  # 打开PSCache，并且指定每个连接上PSCache的大小
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+
+# hibernate
+hibernate:
+  showSql: true
+  formatSql: true
+  hbm2ddl:
+    auto: none

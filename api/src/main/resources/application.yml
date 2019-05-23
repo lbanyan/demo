@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+  resources:
+    cache-period: 604800
+    chain:
+      gzipped: true
+      cache: true
+  http:
+    encoding:
+      enabled: true
+      charset: utf-8
+      force: true
+
+# 端口
+server:
+  port: 8080
+
+# hibernate
+hibernate:
+  showSql: false
+  formatSql: false
+  hbm2ddl:
+    auto: none
+
+# entity包路径
+entity:
+  packagesToScan: com.seeapp.entity
