@@ -38,5 +38,5 @@ datasource:
 hibernate:
   showSql: true
   formatSql: true
-  hbm2ddl:
-    auto: update
+#  hbm2ddl:
+#    auto: update

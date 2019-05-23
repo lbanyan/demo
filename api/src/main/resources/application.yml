@@ -21,7 +21,7 @@ hibernate:
   showSql: false
   formatSql: false
   hbm2ddl:
-    auto: none
+    auto:
 
 # entity包路径
 entity:
