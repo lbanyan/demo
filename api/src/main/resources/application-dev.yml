@@ -4,9 +4,9 @@ redis:
   port: 6379
   password: 111111
   pool:
-    max-wait: 200
-    max-active: 100
-    max-idle: 80
+    maxWait: 200
+    maxTotal: 100
+    maxIdle: 80
 
 # 数据库
 datasource:
