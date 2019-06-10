@@ -25,4 +25,4 @@ hibernate:
 
 # entity包路径
 entity:
-  packagesToScan: com.seeapp.entity
+  packagesToScan: com.seeapp.demo.entity

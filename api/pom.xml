@@ -3,11 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.seeapp</groupId>
-        <artifactId>demo-parent</artifactId>
+        <groupId>com.seeapp.demo</groupId>
+        <artifactId>parent</artifactId>
         <version>1.0.0</version>
     </parent>
-    <artifactId>demo-api</artifactId>
+    <artifactId>api</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -16,8 +16,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.seeapp</groupId>
-            <artifactId>demo-entity</artifactId>
+            <groupId>com.seeapp.demo</groupId>
+            <artifactId>entity</artifactId>
             <version>${project.version}</version>
         </dependency>
         <!-- mydog 工具包 -->
